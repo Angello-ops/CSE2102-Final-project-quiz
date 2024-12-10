@@ -1,6 +1,0 @@
-/* Hover effect for each letter */
-.hover-letter:hover {
-  color: #0056b3; /* Changes color */
-  transform: scale(1.2); /* Enlarges letter */
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth animation */
-}
