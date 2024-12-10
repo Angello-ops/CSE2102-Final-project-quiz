@@ -1,20 +1,24 @@
 import React from 'react';
-import my_state from './my_state';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-class Score extends React.Component {
-  
-    render() {
-        return(
-            <>
-                <h1>This is the Score page</h1>
-                <h2>{this.props.s_prop}</h2>
-                <h2> Your score so far is {my_state.my_score} / {my_state.my_count} </h2>
-                <br/>
-                <br/>
-               
-            </>
-        );
-    }
+function Score({ s_prop }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const score = location.state?.score || 0; // Default to 0 if score isn't passed
+
+  const handleTryAgain = () => {
+    navigate('/Quiz');
+  };
+
+  return (
+    <div>
+      <h1>{s_prop}</h1>
+      <p>
+        You got {score} / 5
+      </p>
+      <button onClick={handleTryAgain}>Try Again</button>
+    </div>
+  );
 }
 
 export default Score;

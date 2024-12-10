@@ -69,3 +69,43 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 "# 2023_starter_quiz_final" 
+
+# Quiz Application Documentation
+
+## Summary
+This project is a React-based quiz application forked off the following ripo https://github.com/wonder-phil/2024_starter_quiz_final featuring:
+- Multiple questions quiz radio-type answers..
+- A scoring system that determines the correct answers.
+- Quiz, About, and Contact pages with intuitive navigation links.
+
+## Key Features
+### Quiz Functionality
+- Users can answer multi-choice questions.
+- Scoring appears smooth and intuitive:
+  - **Improvement**: The score won't be shown as an irritating pop up. It will be shown on a separate **Scoring Page** after submission.
+  - Users may rest the quiz and subsequently take up again-with complete ease.
+
+### Contact Page
+- Full-fledged **Contact Page** there is, where users can send in their feedback.
+- And there is direct reception for feedback through **EmailJS**.
+- Validation is done so that email, rating, and feedback are fine before submission.
+
+### About Page:
+- It has newly introduced an **About Page** with an explanation of the purpose and work of the project.
+- It is a clickable **Website Title**(Welcome to The Coolest Hub Ever) that can redirect into the About Page.
+
+### General Design Improvements
+- Improved quiz layout for reading Should be full left aligned for the questions, while choices are multiple.
+- Professional appearance and user friendly navigation links and overall styling.
+
+---
+
+## Directions for Running the Code
+
+1. **Install Dependencies**:
+   Run the following command in the project directory to install all required packages:
+   ```bash
+   npm install
+   npm install emailjs-com
+
+finally npm start
